@@ -1,0 +1,49 @@
+@charset "UTF-8";
+.select,input[type="text"],textarea{
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  appearance: none;
+  width: 95%;
+  height: 43%;
+  padding: 0 10px;
+  border: 1px solid #c1c1c1;
+  border-radius: 0;
+  background: #f1f1f1;
+  font-size: 1.6rem;
+  line-height: 43px;
+}
+
+.textarea {
+  height: 100px;
+  line-height: 1.5;
+  padding: 0px;
+}
+
+
+.submit-btn {
+  display: block;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: #d8d8d8;
+  color: #312c2c;
+  font-size: 1.4rem;
+  width: 116px;
+  height: 43px;
+  line-height: 43px;
+  margin: 0 auto;
+}
+
+.form-title {
+  margin-bottom: 10px;
+}
+
+.form-title span {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #ff0013;
+  margin-left: 8px;
+}

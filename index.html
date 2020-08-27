@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+ <html lang="ja">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scalable=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!-- スムーズスクロール部分の記述 -->
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+
+</script>
+    <title>yuri`Profile</title>
+ </head>
+<body>
+ <header class="header">
+ <main class="main">
+      <h1 class="name"><span>My Portfolio</span></h1>
+ </header>
+
+   <div class="section s_01">
+    <h2 id="s_01"></h2>
+  　 <ul>
+        <li><a href="#1"><h4>自己紹介</h4></a><li>
+        <li><a href="#2"><h4>言語</h4></a><li>
+        <li><a href="#3"><h4>LP模写・実績</h4></a><li>
+        <li><a href="#4"><h4>費用</h4></a><li>
+        <li><a href="#5"><h4>お問い合わせ</h4></a><li>
+    </ul>
+<section>
+    <div class="oneArea" id="1">
+      <div class="one_title"><h2>自己紹介</h2>
+      <img src="img/E7EB71D8-6679-4820-B10A-B026B18667C7.png" padding=10 width="150px" height="150px">
+          <p class="lead">名前:yuri.w<br>2001年栃木県生まれ　19歳　<br>高卒で就職し,5月からプログラミングを勉強しながら働く。３ヶ月で退社し本格的にプログラミングの勉強へ。<br>白黒を基調としたシンプルでわかりやすいデザインが得意です。
+</section>
+
+<section>
+    <div class="oneArea" id="2">
+      <div class="one_title"><h3>言語</h3></div>
+      <ul>
+      <li class="lead">javascript  HTML CSS</li>
+      </ul>
+      <ul class="top-banner">
+      <img src="img/javascript.png" width="100px" height="100px">
+      <img src="img/725px-HTML5_logo_resized.svg.png" width="100px" height="100px">
+      <img src="img/badge_css3.png" width="100px" height="100px">
+      <h3 class="heading02 fade-in"></h3>
+    </ul>
+    </div>
+</section>
+
+<section>
+    <div class="oneArea" id="3">
+      <div class="one_title"><h3>LP模写・実績</h3></div>
+      <ul class="horizontal-list">
+        <li class="item">
+          <a href="https://nabe0o.github.io/lecture/"><img src="img/スクリーンショット 2020-08-12 23.56.46.png" width=100% height="100%"></a>
+        </li>
+        <li class="item">
+          <a href="https://nabe0o.github.io/portfolio2/"><img src="img/スクリーンショット 2020-08-13 0.16.45.png" width=100% height="100%" ></a>
+        </li>
+        <li class="item">
+          <a href="https://nabe0o.github.io/portfolio3/"><img src="img/スクリーンショット 2020-08-12 23.56.02.png" width=100% height="100%"></a>
+        </li>
+        </ul>
+</div>
+</section>
+
+<section>
+   <div class="oneArea" id="4">
+    <div class="one_title"><h3>費用</h3></div>
+      <h4 class="fade-in">安価な値段設定</h4>
+      <p class="heading02">下記お問い合わせにてご相談ください。<br>もちろんお見積もりだけでも大丈夫です。</p>
+   </div>
+</section>
+
+<section>
+  <div class="oneArea" id="5">
+    <div class="one_title"><h3>お問い合わせ</h3></div>
+  </div>
+     <legend class="form-title">お名前<span class="must">*必須</span></legend>
+     <div class="form-input"><input type="text" class="input-text"></div>
+     <legend class="form-title">ふりがな<span class="must">*必須</span></legend>
+     <div class="form-input"><input type="text" class="input-text"></div>
+     <legend class="form-title">電話番号<span class="must"></span></legend>
+     <div class="form-input"><input type="text" class="input-text"></div>
+     <legend class="form-title">メールアドレス<span class="must">*必須</span></legend>
+     <div class="form-input"><input type="text" class="input-text"></div>
+     <legend class="form-title">メールアドレス確認用<span class="must">*必須</span></legend>
+     <div class="form-input"><input type="text" class="input-text"></div>
+     <legend class="form-title">ご用件<span class="must">*必須</span></legend>
+     <div class="forminput"><textarea class="textarea"></textarea></div>
+     <button class="submit-btn">送信</button>
+</section>
+
+</main>
+
+<section>
+ <footer>
+  <p class="copy"><small>yuri hp</small></p>
+  </form>
+ </footer>
+</section>
+
+</body>
+</html>
